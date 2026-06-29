@@ -1,5 +1,5 @@
 dependencies:
   idf: ">=6.0"
-  tmp105:
+  dhanquna/tmp105-idf:
     version: "*"
     override_path: "../../../"
