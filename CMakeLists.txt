@@ -1,2 +1,4 @@
-idf_component_register(SRCS "bmp105.c"
-                    INCLUDE_DIRS "include")
+idf_component_register(
+    SRCS "tmp105.c"
+    INCLUDE_DIRS "include"
+)
