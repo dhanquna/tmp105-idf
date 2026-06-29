@@ -1,0 +1,22 @@
+menu "Example Configuration"
+
+    config I2C_SCL
+        int "SCL GPIO Num"
+        default 40
+        help
+            GPIO number for I2C clock line.
+
+    config I2C_SDA
+        int "SDA GPIO Num"
+        default 41
+        help
+            GPIO number for I2C data line.
+
+    config READ_INTERVAL
+        int "Temperature Read Interval"
+        range 250 60000
+        default  1000
+        help
+            Delay between two temperature readings in milliseconds
+
+endmenu

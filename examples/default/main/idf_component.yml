@@ -1,0 +1,5 @@
+dependencies:
+  idf: ">=6.0"
+  tmp105:
+    version: "*"
+    override_path: "../../../"
