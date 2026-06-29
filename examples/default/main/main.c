@@ -12,7 +12,7 @@ static const char *TAG = "TMP105 reader";
 
 #define I2C_SCL_IO CONFIG_I2C_SCL /*!< gpio number for I2C master clock */
 #define I2C_SDA_IO CONFIG_I2C_SDA /*!< gpio number for I2C master data  */
-#define I2C_PORT -1               /*!< I2C port number for master dev (-1 means auto detect)*/
+#define I2C_PORT 0                /*!< I2C port number for master dev */
 #define I2C_FREQ_HZ 100000        /*!< I2C master clock frequency */
 
 #define TMP105_ADDR TMP105_ADDRESS_0
