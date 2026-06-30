@@ -63,6 +63,50 @@ esp_err_t tmp105_delete(tmp105_handle_t handle);
  */
 esp_err_t tmp105_read_temperature(tmp105_handle_t handle, int16_t *temperature_raw, float *temperature);
 
+/**
+ * @brief set high temperature threshold
+ * 
+ * @param[in] handle TMP105 device handle
+ * @param[in] temperature temperature value in degree C
+ * @return
+ *     - ESP_OK Success
+ *     - ESP_FAIL Fail
+ */
+esp_err_t tmp105_set_high_temperature(tmp105_handle_t handle, float temperature);
+
+/**
+ * @brief set low temperature threshold
+ * 
+ * @param[in] handle TMP105 device handle
+ * @param[in] temperature temperature value in degree C
+ * @return
+ *     - ESP_OK Success
+ *     - ESP_FAIL Fail
+ */
+esp_err_t tmp105_set_low_temperature(tmp105_handle_t handle, float temperature);
+
+/**
+ * @brief read high temperature threshold
+ * 
+ * @param[in]  handle TMP105 device handle
+ * @param[out] temperature temperature value in degree C
+ * @return
+ *     - ESP_OK Success
+ *     - ESP_FAIL Fail
+ */
+esp_err_t tmp105_get_high_temperature(tmp105_handle_t handle, float *temperature);
+
+/**
+ * @brief read low temperature threshold
+ * 
+ * @param[in]  handle TMP105 device handle
+ * @param[out] temperature temperature value in degree C
+ * @return
+ *     - ESP_OK Success
+ *     - ESP_FAIL Fail
+ */
+esp_err_t tmp105_get_low_temperature(tmp105_handle_t handle, float *temperature);
+
 #ifdef __cplusplus
 }
 #endif
